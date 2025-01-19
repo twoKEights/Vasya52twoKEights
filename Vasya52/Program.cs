@@ -45,7 +45,7 @@ bool xBool;
 xBool = Boolean.Parse(Console.ReadLine());
 Console.WriteLine(xBool + " - ваше значение");
 
-
+// бла бла бла бла раз два три 4 5 это очень важный комментарий для нашв рабарь
 
 
 

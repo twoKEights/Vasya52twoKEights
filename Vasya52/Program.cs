@@ -130,13 +130,18 @@ internal class Program
 
         Console.WriteLine(max + " " + min);
 
-        int getFactorial(int x)
+        int getFactorial(int number)
         {
-            int result;
+            int result = 1;
 
-            return result;
+            for(int i - 0; i <=number; i++)
+            {
+                result *= i;
+            }
+                return result;
         }
 
+        Console.WriteLine()getFactorial(4));
        
 
 

@@ -4,6 +4,28 @@ using System.Reflection.Metadata.Ecma335;
 
 internal class Program
 {
+    class Person ()
+    {
+        public double height;
+        public int age;
+        public string name;
+
+        public void speak()
+        {
+            Console.WriteLine($"мЕня зовут - {name}, мне {age} лет");
+
+
+        }
+    }
+
+
+    
+
+
+
+
+
+
     private static void Main(string[] args)
     {
         void DataType()
@@ -115,21 +137,12 @@ internal class Program
             return x * y;
 
         }
-         double getKVADRAT(double x)
+        double getKVADRAT(double x)
         {
             var result = x * x;
             return result;
 
         }
-
-        Console.WriteLine(getKVADRAT(100456));
-
-        var max = Int32.MaxValue;
-
-        var min = Int32.MinValue;
-
-        Console.WriteLine(max + " " + min);
-
         int getFactorial(int number)
         {
             int result = 1;
@@ -141,11 +154,22 @@ internal class Program
                 return result;
         }
 
-        Console.WriteLine(getFactorial(4));
-       
+        Person tdsgrinder = new Person();
+
+        tdsgrinder.name = "volosatik";
+        tdsgrinder.age = 52;
+        tdsgrinder.speak();
+
+        Person vasechka = new Person();
+        vasechka.age = 51;
+        vasechka.name = "volosatik robat";
+        vasechka.speak();
 
 
 
 
     }
+
+
+
 }
